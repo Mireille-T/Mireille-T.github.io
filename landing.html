@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mireille Tan</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css">
+    <link rel="stylesheet" href="style.css">
+    <link href='https://fonts.googleapis.com/css?family=Playfair Display' rel='stylesheet'>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark center-el center-text">
+            <div class="container-fluid">
+                <a class="navbar-brand" id="navName" href="landing.html">Mireille</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="aboutMe.html">&ensp;<i
+                                    class="fas fa-user"></i>&ensp;About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="projects.html">&ensp;<i
+                                    class="fas fa-cogs"></i>&ensp;Projects</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="3dmodels.html">&ensp;<i
+                                    class="fas fa-cube"></i>&ensp;3D
+                                Models</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="media/Resume_MireilleTan.pdf"
+                                target="_blank">&ensp;<i class="fas fa-download"></i>&ensp;Résumé</a>
+                        </li>
+                    </ul>
+                    <span id="socialMediaBar" class="navbar-text">
+                        <a href="mailto:mireille.tan@gmail.com" target="_blank"><i
+                                class="fas fa-envelope"></i></a>&emsp;<a href="https://github.com/Mireille-T"
+                            target="_blank"><i class="fab fa-github"></i></a>&emsp;<a
+                            href="https://www.linkedin.com/in/mireille-tan/" target="_blank"><i
+                                class="fab fa-linkedin"></i></a>&emsp;<a href="https://medium.com/@mireille.tan"
+                            target="_blank"><i class="fab fa-medium-m"></i></a>
+                    </span>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <div>
+        <div id="bg-curve-container">
+            <img id="bg-curve" src="media/bg-curve-vector.svg" alt="">
+        </div>
+        <div class="container" id="landing-card">
+            <div class="row g-5">
+                <div class="col-lg-7">
+                    <h2>¡Hola!, I am</h2>
+                    <h1 id="landing-name">Mireille Tan.</h1>
+                    <span id="break"></span>
+                    <h2>I like to
+                        <span class="yellow-text">
+                            <span id="rotating">code!</span>
+                            <i class="fas fa-chevron-up" id="rotating-up"></i>
+                            <i class="fas fa-chevron-down" id="rotating-down"></i>
+                        </span>
+                    </h2>
+                    <br>
+                    <button id="toggleAnimation">Toggle animation on/off</button>
+                </div>
+                <div class="col-lg-5">
+                    <img src="media/coder_illustration.svg" alt="Coder illustration" id="landingIllustration">
+                </div>
+            </div>
+        </div>
+    </div>
+    <br>
+    <div>
+        <div id="bg-window1-container">
+            <img id="bg-window1" src="media/bg-window.svg" alt="">
+        </div>
+        <br>
+        <div class="container" id="landing-card">
+            <h1>About Me</h1>
+            <br>
+            <div class="row">
+                <div class="col-lg-4">
+                    <img id="profilePicture" src="media/profile.jpg" alt="Mireille Tan" width="90%">
+                </div>
+                <div class="col-lg-8">
+                    <p>Hello! I am a graduate from Raffles Institution and a <span class="yellow-text">Gold Microsoft
+                            Learn Student Ambassador</span>, who plans on studying <span class="yellow-text">Computer
+                            Science</span> in
+                        university. A <span class="yellow-text">self-motivated learner</span>, I make the most out of
+                        any opportunities I have to have fun
+                        whilst pursuing my developing my skills, especially in <span class="yellow-text">digital
+                            accessibility</span> domain and the <span class="yellow-text">Art X Tech</span>
+                        intersection. Having studied <span class="yellow-text">Spanish</span> for 6 years, I have
+                        also developed an interest in languages and their connected histories.</p>
+                    <span id="break"></span>
+                    <p>In the future, I hope to make impactful contributions and/or pursue the areas of Digital
+                        Accessibility, Assistive Technology, Extended Reality, Computer Graphics and Game Development.
+                    </p>
+                </div>
+            </div>
+            <a href="aboutMe.html#skills"><button type="button" class="moreButton">My Skills <i class="fas fa-arrow-right"></i></button></a>
+            <a href="aboutMe.html#journey"><button type="button" class="moreButton">My Journey <i class="fas fa-arrow-right"></i></button></a>
+        </div>
+    </div>
+    <br>
+    <div>
+        <div id="bg-window2-container">
+            <img id="bg-window2" src="media/bg-window.svg" alt="">
+        </div>
+        <div class="container" id="landing-card">
+            <h1>Projects</h1>
+            <div class="row">
+                <div class="col">
+                    <div class="card project-card-main mb-3 center-el" id="projectElly">
+                        <img src="media/elly-chrome-web-store.png" class="card-img-top"
+                            alt="Chrome Web Store Elly Beta Accessibility Extension Page">
+                        <div class="card-body">
+                            <h4 class="card-title">Elly Browser Extension (Backend Development)</h4>
+                            <div id="card-links" class="container">
+                                <div class="row justify-content-start">
+                                    <div class="col-lg-4">
+                                        <h5><i class="fas fa-globe"></i>&ensp;Website: <a href="joinelly.com"
+                                                target="_blank">joinelly.com</a></h5>
+                                    </div>
+                                    <div class="col-lg-4">
+                                        <h5><i class="fab fa-youtube"></i> YouTube: <a
+                                                href="https://www.youtube.com/channel/UCczW3ki1-bNPE2YnCdTXSAg"
+                                                target="_blank">@Elly</a></h5>
+                                    </div>
+                                    <div class="col-lg-4">
+                                        <h5><i class="fab fa-twitter"></i>&ensp;Twitter: <a href="https://twitter.com/EllyOrg"
+                                                target="_blank">@EllyOrg</a></h5>
+                                    </div>
+                                </div>
+                            </div>
+                            <p class="card-text">Presently, together with 4 other Microsoft Learn Student Ambassadors, I am part of a
+                                global development team of Elly - a browser extension that uses Computer Vision to generate alt text for
+                                images on Twitter. As a backend developer, I used JavaScript to make several API calls with Axios to add
+                                features for an accessibility checker. Additionally, I translated the frontend of the extension
+                                popup from Figma to HTML and CSS.</p>
+                            <h6>Skills used: JavaScript, HTML, CSS, GitHub, Azure</h6>
+                        </div>
+                    </div>
+                </div>
+                <a href="projects.html"><button type="button" class="moreButton">Check out more of my projects beyond web development <i class="fas fa-arrow-right"></i></button></a>
+            </div>
+        </div>
+    </div>
+    <div>
+        <div id="bg-window1-container">
+            <img id="bg-window1" src="media/bg-window.svg" alt="">
+        </div>
+        <div class="container" id="landing-card">
+            <h1>3D Models</h1>
+            <div class="row">
+                <div class="col">
+                    <video id="video-display" class="galleryImg" width="100%" controls>
+                        <source src="media/Blender-Sony_A7C.mp4" type="video/mp4">
+                        Sorry, but your browser does not support the video tag. Access the video <a
+                            href="media/Blender-Sony_A7C.mp4" target="_blank">here</a> instead.
+                    </video>
+                    <a href="3dmodels.html"><button type="button" class="moreButton">Check out more of my 3D models in Blender <i class="fas fa-arrow-right"></i></button></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <button type="button" class="btn btn-floating btn-lg" id="btn-back-to-top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+    <footer id="footer-overwrite" class="center-el center-text">
+        <p>Thank you for dropping by!</p>
+        <p>Designed and built by me using Bootstrap.</p>
+        <p>Icons: Font Awesome by Dave Gandy - <a href="http://fontawesome.io" target="_blank">http://fontawesome.io</a>
+        </p>
+        <p>Illustrations: unDraw by Katerina Limpitsouni - <a href="https://undraw.co/"
+                target="_blank">https://undraw.co/</a></p>
+    </footer>
+</body>
+
+</html>

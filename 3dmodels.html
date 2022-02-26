@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mireille Tan</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css">
+    <link rel="stylesheet" href="style.css">
+    <link href='https://fonts.googleapis.com/css?family=Playfair Display' rel='stylesheet'>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark center-el center-text">
+            <div class="container-fluid">
+                <a class="navbar-brand" id="navName" href="landing.html">Mireille</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="aboutMe.html">&ensp;<i
+                                    class="fas fa-user"></i>&ensp;About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="projects.html">&ensp;<i
+                                    class="fas fa-cogs"></i>&ensp;Projects</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="3dmodels.html">&ensp;<i
+                                    class="fas fa-cube"></i>&ensp;3D
+                                Models</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="media/Resume_MireilleTan.pdf"
+                                target="_blank">&ensp;<i class="fas fa-download"></i>&ensp;Résumé</a>
+                        </li>
+                    </ul>
+                    <span id="socialMediaBar" class="navbar-text">
+                        <a href="mailto:mireille.tan@gmail.com" target="_blank"><i
+                                class="fas fa-envelope"></i></a>&emsp;<a href="https://github.com/Mireille-T"
+                            target="_blank"><i class="fab fa-github"></i></a>&emsp;<a
+                            href="https://www.linkedin.com/in/mireille-tan/" target="_blank"><i
+                                class="fab fa-linkedin"></i></a>&emsp;<a href="https://medium.com/@mireille.tan"
+                            target="_blank"><i class="fab fa-medium-m"></i></a>
+                    </span>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <div>
+        <div id="bg-curve-container">
+            <img id="bg-curve" src="media/bg-curve-vector.svg" alt="">
+        </div>
+        <div class="container" id="landing-card">
+            <div class="row g-5">
+                <div class="col-lg-7">
+                    <h1>3D Models</h1>
+                    <p>Over the past 5+ years, I have (somehow) started more than 150 3D modelling projects in
+                        TinkerCAD, VECTARY and Blender. Here are some of my Blender projects that I am willing to share.
+                    </p>
+                </div>
+                <div class="col-lg-5">
+                    <img id="modelIllustration" src="media/3dmodel_illustration.svg" width="100%" alt="3D modelling illustraton">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="carouselCaptions" class="carousel slide width-85 center-el" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselCaptions" data-bs-slide-to="0" class="active"
+                aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            <button type="button" data-bs-target="#carouselCaptions" data-bs-slide-to="3" aria-label="Slide 4"></button>
+            <button type="button" data-bs-target="#carouselCaptions" data-bs-slide-to="4" aria-label="Slide 5"></button>
+            <button type="button" data-bs-target="#carouselCaptions" data-bs-slide-to="5" aria-label="Slide 6"></button>
+            <button type="button" data-bs-target="#carouselCaptions" data-bs-slide-to="6" aria-label="Slide 7"></button>
+            <button type="button" data-bs-target="#carouselCaptions" data-bs-slide-to="7" aria-label="Slide 8"></button>
+        </div>
+        <div id="galleryCarousel" class="carousel-inner center-el">
+            <div class="carousel-item active" data-bs-interval="0">
+                <img src="media/Blender-Teahouse.png" alt="3D render of a Chinese tea set" class="d-block w-100 galleryImg">
+                <div class="carousel-caption d-none d-md-block carousel-gallery-caption center-el">
+                    <h5>"Teahouse" (22/12/2021)</h5>
+                </div>
+            </div>
+            <div class="carousel-item" data-bs-interval="0">
+                <img src="media/Blender-Explorer.png"
+                    alt="3D render of a kerosene lamp, a leather journal, an amulet and a compass"
+                    class="d-block w-100 galleryImg">
+                <div class="carousel-caption d-none d-md-block carousel-gallery-caption center-el">
+                    <h5>"Explorer" (30/05/2020)</h5>
+                </div>
+            </div>
+            <div class="carousel-item" data-bs-interval="0">
+                <img src="media/Blender-Mechanical_Keyboard.png"
+                    alt="3D render of a mechanical keyboard with rainbow lights" class="d-block w-100 galleryImg">
+                <div class="carousel-caption d-none d-md-block carousel-gallery-caption center-el">
+                    <h5>"Mechanical Keyboard" (09/08/2021)</h5>
+                </div>
+            </div>
+            <div class="carousel-item" data-bs-interval="0">
+                <img src="media/Blender-Ice_Skates.png" alt="3D render of ice skates" class="d-block w-100 galleryImg">
+                <div class="carousel-caption d-none d-md-block carousel-gallery-caption center-el">
+                    <h5>"Ice Skates" (04/06/2020)</h5>
+                </div>
+            </div>
+            <div class="carousel-item" data-bs-interval="0">
+                <img src="media/Blender-Coffee.png" alt="3D render of a cafe" class="d-block w-100 galleryImg">
+                <div class="carousel-caption d-none d-md-block carousel-gallery-caption center-el">
+                    <h5>"Coffee" (04/01/2022)</h5>
+                </div>
+            </div>
+            <div class="carousel-item" data-bs-interval="0">
+                <img src="media/Blender-Airplane.png" alt="3D render of a handcrafted airplane model"
+                    class="d-block w-100 galleryImg">
+                <div class="carousel-caption d-none d-md-block carousel-gallery-caption center-el">
+                    <h5>"Airplane" (24/04/2020)</h5>
+                </div>
+            </div>
+            <div class="carousel-item" data-bs-interval="0">
+                <img src="media/Blender-Robot&Butterfly.png" alt="3D render of a robot and a mechanical butterfly"
+                    class="d-block w-100 galleryImg">
+                <div class="carousel-caption d-none d-md-block carousel-gallery-caption center-el">
+                    <h5>"Robot & Butterfly" (04/05/2020)</h5>
+                </div>
+            </div>
+            <div class="carousel-item" data-bs-interval="0">
+                <img src="media/Blender-Nerikiri.png" alt="3D render of a plate of Japanese nerikiri sweets"
+                    class="d-block w-100 galleryImg">
+                <div class="carousel-caption d-none d-md-block carousel-gallery-caption center-el">
+                    <h5>"Wagashi" (06/10/2020)</h5>
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselCaptions" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselCaptions" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+    <div class="container">
+        <div class="row g-3 row-cols-1 center-el center-text">
+            <div class="col">
+                <video id="video-display" class="galleryImg" width="100%" controls>
+                    <source src="media/Blender-Sony_A7C.mp4" type="video/mp4">
+                    Sorry, but your browser does not support the video tag. Access the video <a
+                        href="media/Blender-Sony_A7C.mp4" target="_blank">here</a> instead.
+                </video>
+            </div>
+        </div>
+        <div id="bg-window1-container">
+            <img id="bg-window1" src="media/bg-window.svg" alt="">
+        </div>
+        <div class="row g-3 row-cols-1 row-cols-lg-3">
+            <div class="col">
+                <div class="row g-3 row-cols-1">
+                    <div class="col">
+                        <img src="media/Blender-Teahouse.png" alt="3D render of a Chinese tea set" width="100%"
+                            class="galleryImg">
+                    </div>
+                    <div class="col">
+                        <img src="media/Blender-Ice_Skates_Portrait.png" alt="3D render of ice skates" width="100%"
+                            class="galleryImg">
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="row g-3 row-cols-1">
+                    <div class="col">
+                        <img src="media/Blender-Explorer.png"
+                            alt="3D render of a kerosene lamp, a leather journal, an amulet and a compass" width="100%"
+                            class="galleryImg">
+                    </div>
+                    <div class="col">
+                        <img src="media/Blender-Coffee.png" alt="3D render of a cafe" width="100%" class="galleryImg">
+                    </div>
+                    <div class="col">
+                        <img src="media/Blender-Robot&Butterfly.png"
+                            alt="3D render of a robot and a mechanical butterfly" width="100%" class="galleryImg">
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="row g-3 row-cols-1">
+                    <div class="col">
+                        <img src="media/Blender-Mechanical_Keyboard.png"
+                            alt="3D render of a mechanical keyboard with rainbow lights" width="100%"
+                            class="galleryImg">
+                    </div>
+                    <div class="col">
+                        <img src="media/Blender-Airplane.png" alt="3D render of a handcrafted airplane model"
+                            width="100%" class="galleryImg">
+                    </div>
+                    <div class="col">
+                        <img src="media/Blender-Nerikiri.png" alt="3D render of a plate of Japanese nerikiri sweets"
+                            width="100%" class="galleryImg">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <button type="button" class="btn btn-floating btn-lg" id="btn-back-to-top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+    <footer class="center-el center-text">
+        <p>Thank you for dropping by!</p>
+        <p>Designed and built by me using Bootstrap.</p>
+        <p>Icons: Font Awesome by Dave Gandy - <a href="http://fontawesome.io" target="_blank">http://fontawesome.io</a>
+        </p>
+        <p>Illustrations: unDraw by Katerina Limpitsouni - <a href="https://undraw.co/"
+                target="_blank">https://undraw.co/</a></p>
+    </footer>
+</body>
+
+</html>

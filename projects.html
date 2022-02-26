@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mireille Tan</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css">
+    <link rel="stylesheet" href="style.css">
+    <link href='https://fonts.googleapis.com/css?family=Playfair Display' rel='stylesheet'>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark center-el center-text">
+            <div class="container-fluid">
+                <a class="navbar-brand" id="navName" href="landing.html">Mireille</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="aboutMe.html">&ensp;<i
+                                    class="fas fa-user"></i>&ensp;About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="projects.html">&ensp;<i
+                                    class="fas fa-cogs"></i>&ensp;Projects</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="3dmodels.html">&ensp;<i
+                                    class="fas fa-cube"></i>&ensp;3D
+                                Models</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="media/Resume_MireilleTan.pdf"
+                                target="_blank">&ensp;<i class="fas fa-download"></i>&ensp;Résumé</a>
+                        </li>
+                    </ul>
+                    <span id="socialMediaBar" class="navbar-text">
+                        <a href="mailto:mireille.tan@gmail.com" target="_blank"><i
+                                class="fas fa-envelope"></i></a>&emsp;<a href="https://github.com/Mireille-T"
+                            target="_blank"><i class="fab fa-github"></i></a>&emsp;<a
+                            href="https://www.linkedin.com/in/mireille-tan/" target="_blank"><i
+                                class="fab fa-linkedin"></i></a>&emsp;<a href="https://medium.com/@mireille.tan"
+                            target="_blank"><i class="fab fa-medium-m"></i></a>
+                    </span>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <div>
+        <div id="bg-curve-container">
+            <img id="bg-curve" src="media/bg-curve-vector.svg" alt="">
+        </div>
+        <div class="container" id="landing-card">
+            <div class="row g-5">
+                <div class="col-lg-7">
+                    <h1>Projects</h1>
+                    <p>Here are some of the key projects that I have worked on. Even if they may not be perfect, these are the
+                        projects where I feel that I have exhibited my skills, displayed my passions and learnt a lot from!</p>
+                </div>
+                <div class="col-lg-5">
+                    <img id="projectsIllustration" src="media/projects_illustration.svg" width="100%" alt="Painter illustraton">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div>
+        <div id="bg-window1-container">
+            <img id="bg-window1" src="media/bg-window.svg" alt="">
+        </div>
+    </div>
+    <br>
+    <div class="card project-card mb-3 center-el" id="projectElly">
+        <img src="media/elly-chrome-web-store.png" class="card-img-top"
+            alt="Chrome Web Store Elly Beta Accessibility Extension Page">
+        <div class="card-body">
+            <h4 class="card-title">Elly Browser Extension (Backend Development)</h4>
+            <div id="card-links" class="container">
+                <div class="row justify-content-start">
+                    <div class="col-lg-4">
+                        <h5><i class="fas fa-globe"></i>&ensp;Website: <a href="joinelly.com"
+                                target="_blank">joinelly.com</a></h5>
+                    </div>
+                    <div class="col-lg-4">
+                        <h5><i class="fab fa-youtube"></i> YouTube: <a
+                                href="https://www.youtube.com/channel/UCczW3ki1-bNPE2YnCdTXSAg"
+                                target="_blank">@Elly</a></h5>
+                    </div>
+                    <div class="col-lg-4">
+                        <h5><i class="fab fa-twitter"></i>&ensp;Twitter: <a href="https://twitter.com/EllyOrg"
+                                target="_blank">@EllyOrg</a></h5>
+                    </div>
+                </div>
+            </div>
+            <p class="card-text">Presently, together with 4 other Microsoft Learn Student Ambassadors, I am part of a
+                global development team of Elly - a browser extension that uses Computer Vision to generate alt text for
+                images on Twitter. As a backend developer, I used JavaScript to make several API calls with Axios to add
+                features for an accessibility checker. Additionally, I translated the frontend of the extension
+                popup from Figma to HTML and CSS.</p>
+            <h6>Skills used: JavaScript, HTML, CSS, GitHub, Azure</h6>
+        </div>
+    </div>
+    <div class="card mb-3 project-card center-el">
+        <div class="row g-0">
+            <div class="col-md-4">
+                <video class="img-fluid rounded-start" controls>
+                    <source src="media/Mente.mp4" type="video/mp4">
+                    Sorry, but your browser does not support the video tag. Access the video <a href="media/Mente.mp4"
+                        target="_blank">here</a> instead.
+                </video>
+            </div>
+            <div class="col-md-8">
+                <div class="card-body">
+                    <h4 class="card-title">"Mente" App Development in Flutter</h4>
+                    <p class="card-text">After ~8 weeks of Flutter lessons under Raffles INVENT, my school's technology
+                        incubation program, I spent 3 days in 2020 developing an app prototype from scratch using
+                        Flutter (Dart programming language).<br><br>As I want to try pursuing assistive technology, I
+                        decided to
+                        attempt making an app that could assist people with dementia.There are still many area of
+                        improvement when it comes to execution, but the basic elements include the following:</p>
+                    <ul id="mente-list">
+                        <li>
+                            <p>A simplified UI for easier comprehension</p>
+                        </li>
+                        <li>
+                            <p>A gallery</p>
+                        </li>
+                        <li>
+                            <p>A notes / reminders system</p>
+                        </li>
+                        <li>
+                            <p>Emergency calling</p>
+                        </li>
+                        <li>
+                            <p>A locations saver (using Google Maps package)</p>
+                        </li>
+                    </ul>
+                    <h6>Skills used: Flutter, Dart</h6>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="card project-card mb-3 center-el">
+        <video class="img-fluid rounded-start" controls>
+            <source src="media/microbit_voice-activated.mp4" type="video/mp4">
+            Sorry, but your browser does not support the video tag. Access the video <a
+                href="media/microbit_voice-activated.mp4" target="_blank">here</a> instead.
+        </video>
+        <div class="card-body">
+            <h4 class="card-title">Voice-activated Micro:bit</h4>
+            <div id="card-links" class="container">
+                <div class="row justify-content-start">
+                    <div class="col-lg-12">
+                        <h5><i class="fab fa-medium-m"></i>&ensp;Medium (referenced): <a
+                                href="https://medium.com/tinkertanker/returning-to-re-intern-at-tinkertanker-2de013324042"
+                                target="_blank">Re-interning at Tinkertanker</a></h5>
+                    </div>
+                </div>
+            </div>
+            <p class="card-text">As part of my internship in 2020, I was tasked with researching the integration of AI
+                with the newly-released Micro:bit v2 for the purpose of developing potential ideas for curriculum. The
+                result was training an ML model on Edge Impulse to make a "voice-activated" Micro:bit that responds to
+                the keyword "Micro:bit".<br><br>Afterwards, I edited the C++ code and further refined the model to
+                accomodate extra keywords. Since I felt that a more engaging problem should include fun projects, I
+                decided to turn the Micro:bit into a "museum" lighting controller, where the LEDs in front of the
+                various small
+                "exhibitions" would turn on/off in response to their respective keywords.</p>
+            <h6>Skills used: ML (Edge Impulse), Micro:bit, C++</h6>
+        </div>
+    </div>
+    <div>
+        <div id="bg-window2-container">
+            <img id="bg-window2" src="media/bg-window.svg" alt="">
+        </div>
+    </div>
+    <div class="row row-cols-1 row-cols-lg-3 g-4 center-el" style="width: 86%;">
+        <div class="col">
+            <div class="card h-100 project-card-group">
+                <img src="media/rt-final-render.png" class="card-img-top"
+                    alt="A render of 3 large spheres and many small spheres made out of diffuse material, metal and glass">
+                <div class="card-body">
+                    <h5 class="card-title">Ray Tracing in One Weekend</h5>
+                    <p class="card-text">After my exams in 2021, to finally start properly pursuing my interest in
+                        Computer
+                        Graphics, I decided to read <a
+                            href="https://raytracing.github.io/books/RayTracingInOneWeekend.html">this incredible book
+                            by Peter Shirley</a>. It was really fun to be able to apply whatever I've learnt over
+                        Physics and Math lessons (specifically topics related to light and trigonometry) to output a
+                        proper ray tracer.
+                    </p>
+                    <h6>Skills used: Physics, C++</h6>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card h-100 project-card-group">
+                <img src="media/musical-microbit.png" class="card-img-top"
+                    alt="A micro:bit microcontroller in a white 3D printed case with a treble clef and piano key design">
+                <div class="card-body">
+                    <h5 class="card-title">Musical Micro:bit</h5>
+                    <div id="card-links" class="container">
+                        <div class="row justify-content-start">
+                            <div class="col-lg-12">
+                                <h6><i class="fas fa-link"></i>&ensp;MyMiniFactory: <a
+                                        href="https://www.myminifactory.com/object/3d-print-musical-microbit-casing-91383"
+                                        target="_blank">Musical Microbit Casing</a></h6>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="card-text">In 2019, I made this as one of my first attempts at creating assistive
+                        technology. It is a Micro:bit that can play different musical notes depending on its tilt angle.
+                        It has a lot of flaws, but I think I have come a long way in terms of understanding mechanisms
+                        and 3D design since then, and this gives me something to look back to.
+                    </p>
+                    <h6>Skills used: Micro:bit, 3D Modelling (Blender), 3D Printing</h6>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card h-100 project-card-group">
+                <img src="media/inkscape-logo.png" class="card-img-top" alt="Inkscape Logo">
+                <div class="card-body">
+                    <h5 class="card-title">Graphic Design</h5>
+                    <p class="card-text">For both my internship and friends, I have completed a fair number of designs
+                        using Inkscape (and sometimes GIMP) - from laser-cut signs to "high-quality" meme content to
+                        even a YouTube banner! Due to the largely personal nature of these projects, I am not
+                        comfortable with sharing them publicly, but they were certainly enjoyable to create.</p>
+                    <h6>Skills used: Inkscape, GIMP</h6>
+                </div>
+            </div>
+        </div>
+    </div>
+    <button type="button" class="btn btn-floating btn-lg" id="btn-back-to-top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+    <footer class="center-el center-text">
+        <p>Thank you for dropping by!</p>
+        <p>Designed and built by me using Bootstrap.</p>
+        <p>Icons: Font Awesome by Dave Gandy - <a href="http://fontawesome.io" target="_blank">http://fontawesome.io</a>
+        </p>
+        <p>Illustrations: unDraw by Katerina Limpitsouni - <a href="https://undraw.co/"
+                target="_blank">https://undraw.co/</a></p>
+    </footer>
+</body>
+
+</html>
