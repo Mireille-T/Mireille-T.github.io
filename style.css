@@ -539,7 +539,7 @@ a:hover {
     color: #fcdf90;
 }
 
-button {
+.moreButton {
     background-color: #085f8580;
     border-radius: 10px;
     border-style: none;
@@ -555,7 +555,7 @@ button {
     text-align: left;
 }
 
-button:hover {
+.moreButton:hover {
     background-color: white;
     color: #004459;
     transition: 0.5s;
