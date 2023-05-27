@@ -1,3 +1,6 @@
+const codeFilter = ["html", "css", "typescript", "azure", "unity", "c#", "github"];
+const designFilter = ["inkscape", "figma"];
+const modelFilter = ["blender3d", "fusion360"];
 const aniTime = 250;
 isPaused = false;
 
@@ -18,6 +21,14 @@ window.addEventListener('load', (event) => {
 
     pauseToggle = document.getElementById("pause-btn");
     pauseToggle.addEventListener("click", togglePause);
+
+    filterBtns = document.getElementById("filter").getElementsByTagName("button");
+    for (let i = 0; i < filterBtns.length; i++) {
+        filterBtns[i].addEventListener("click", filterProjects);
+    }
+
+    assignFlipDir();
+    assignProjectLinks();
 });
 
 function toggleMobileMenu() {
@@ -62,4 +73,43 @@ function togglePause() {
     document.getElementById("pause-icon").classList.toggle("fa-play");
     document.getElementById("pause-play-text").innerHTML = isPaused ? "Play" : "Pause";
     sessionStorage.setItem("pause", isPaused.toString());
+}
+
+function assignFlipDir() {
+    let projectCards = document.getElementsByClassName("card-title-container");
+    for (let i = 0; i < projectCards.length; i++) {
+        if (i % 2 == 0) projectCards[i].classList.toggle("flipx");
+        else projectCards[i].classList.toggle("flipy");
+    }
+}
+
+function assignProjectLinks() {
+    let projectCards = document.getElementsByClassName("project-card");
+    for (let i = 0; i < projectCards.length; i++) {
+        projectCards[i].href = "projects/" + projectCards[i].id.toString().substring(8) + ".html";
+    }
+}
+
+function filterProjects(evt) {
+    document.getElementsByClassName("current-filter")[0].classList.toggle("current-filter");
+    evt.target.classList.toggle("current-filter");
+    let currentFilter = evt.target.innerHTML;
+    let projectCards = document.getElementsByClassName("project-card");
+    if (currentFilter == "All") {
+        for (let i = 0; i < projectCards.length; i++) {
+            projectCards[i].style.display = "block";
+        }
+    } else if (currentFilter == "Code") {
+        for (let i = 0; i < projectCards.length; i++) {
+            projectCards[i].style.display = (Array.from(projectCards[i].classList).filter(x => codeFilter.indexOf(x) !== -1).length > 0) ? "block" : "none";
+        }
+    } else if (currentFilter == "Graphics") {
+        for (let i = 0; i < projectCards.length; i++) {
+            projectCards[i].style.display = (Array.from(projectCards[i].classList).filter(x => designFilter.indexOf(x) !== -1).length > 0) ? "block" : "none";
+        }
+    } else if (currentFilter == "3D Models") {
+        for (let i = 0; i < projectCards.length; i++) {
+            projectCards[i].style.display = (Array.from(projectCards[i].classList).filter(x => modelFilter.indexOf(x) !== -1).length > 0) ? "block" : "none";
+        }
+    }
 }

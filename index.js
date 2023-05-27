@@ -1,3 +1,5 @@
+const codeStart = ["std::cout &lt;&lt;", "Debug.Log(", "System.out.println(", "console.log(", "Serial.println("];
+const codeEnd = ["&lt;&lt; std::endl;", ");", ");", ");", ");"];
 const aniTime = 250;
 isPaused = false;
 
@@ -18,6 +20,29 @@ window.addEventListener('load', (event) => {
 
     pauseToggle = document.getElementById("pause-btn");
     pauseToggle.addEventListener("click", togglePause);
+
+    projectBtns = document.getElementsByClassName("btn-project");
+    for (let i = 0; i < projectBtns.length; i++) {
+        projectBtns[i].addEventListener("click", toggleProject);
+    }
+
+    codeSpanFirst = document.getElementById("code-start");
+    codeSpanLast = document.getElementById("code-end");
+    let i = 0;
+    const cycleCode = () => {
+        if (!isPaused) {
+            codeSpanFirst.classList.toggle("fade");
+            codeSpanLast.classList.toggle("fade");
+            setTimeout(function () {
+                codeSpanFirst.innerHTML = codeStart[i];
+                codeSpanLast.innerHTML = codeEnd[i];
+                codeSpanFirst.classList.toggle("fade");
+                codeSpanLast.classList.toggle("fade");
+            }, aniTime);
+            i = ++i % codeStart.length;
+        }
+    };
+    setInterval(cycleCode, 2500);
 });
 
 function toggleMobileMenu() {
@@ -62,4 +87,14 @@ function togglePause() {
     document.getElementById("pause-icon").classList.toggle("fa-play");
     document.getElementById("pause-play-text").innerHTML = isPaused ? "Play" : "Pause";
     sessionStorage.setItem("pause", isPaused.toString());
+}
+
+function toggleProject(evt) {
+    let project = evt.target.id.toString();
+    document.getElementsByClassName("current-project")[0].classList.toggle("current-project");
+    document.getElementsByClassName("btn-current-project")[0].classList.toggle("btn-current-project");
+    setTimeout(function () {
+        document.getElementById(project).classList.toggle("btn-current-project");
+        document.getElementById(project.substring(4))?.classList.toggle("current-project");
+    }, aniTime);
 }

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects | alto</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;900&family=Roboto+Mono" rel="stylesheet">
+    <link rel="stylesheet" href="project-page.css">
+    <script src="https://kit.fontawesome.com/31e472c4f4.js" crossorigin="anonymous"></script>
+    <script src="project-page.js"></script>
+</head>
+
+<body>
+    <a id="back-btn" href="../projects.html">
+        <i class="fa-solid fa-arrow-left"></i>
+        <p>Back to Projects</p>
+    </a>
+    <section>
+        <img class="cover-image" src="../media/alto-cover.jpg"
+            alt="alto - a browser add-on for digital accessibility | The Bigger Picture">
+        <h1 class="outline-text">alto</h1>
+        <div class="project-links">
+            <a href="https://youtu.be/0HYQcL4rvEU" target="_blank" aria-label="YouTube"><i
+                    class="fa-brands fa-youtube"></i></a>
+            <a href="https://github.com/Mireille-T/The-Bigger-Picture" target="_blank" aria-label="GitHub"><i
+                    class="fa-brands fa-github"></i></a>
+        </div>
+        <div class="project-skills">
+            <span>Azure</span>
+            <span>CSS</span>
+            <span>GitHub</span>
+            <span>HTML</span>
+            <span>JavaScript</span>
+        </div>
+        <p>alto is a browser add-on that automatically generates alt text for images on a webpage as a means of addressing the <a
+                href="https://webaim.org/projects/million/#alttext">60%+ of online images lacking alt text</a>, and
+            making the Internet a more inclusive place for screen reader users.</p>
+        <p>As the developers of alto, The Bigger Picture - a team consisting of Thomas Tai, Raymond Ma and myself -
+            managed to earn the title of <a
+                href="https://imaginecup.microsoft.com/en-US/Member/WinnerCertificate?userid=EULWDq8TCS998uhwmyOHlQ%253d%253d&compId=d6eyg4hwXs7WbP0sXtsOIg%253d%253d&teamId=SfW3z2TKGuhxauSyp25UIg%253d%253d"
+                target="_blank">2023 Microsoft Imagine Cup Americas World Finalists</a>!</p>
+        <img src="../media/alto-wide.png" alt="alto browser add-on UI">
+        <p>As the team's frontend developer, I translated the add-on design from Figma to <span
+                class="project-skill">HTML</span> and <span class="project-skill">CSS</span>. In particular, special
+            care was taken to ensure that the toggles in the add-on were accessible to keyboard
+            navigation and screen readers, with the use of wrappers around a HTML checkbox and ARIA labels. This ensures
+            a pleasant yet inclusive UI.</p>
+        <iframe src="https://www.youtube.com/embed/0HYQcL4rvEU" title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen></iframe>
+        <p>Additionally, I handled
+            various features involving user interaction via <span class="project-skill">JavaScript</span>,
+            ensuring that the relevant <span class="project-skill">Azure</span> API was called, and that the response is
+            returned according to user settings (e.g. language).</p>
+    </section>
+    <div id="misc-buttons">
+        <button type="button" class="pri-btn" id="to-top-btn" aria-label="scroll-to-top"><i
+                class="fa-solid fa-arrow-up"></i></button>
+        <button type="button" class="sec-btn" id="dark-mode-btn" aria-label="toggle-light-and-dark-mode"><i
+                id="dark-mode-icon" class="fa-solid fa-moon"></i>
+            <span class="tooltip"><span id="light-dark-text">Dark</span> Mode</span>
+        </button>
+    </div>
+    <footer>
+        Developed with 💚 by Mireille Tan<br>Last update: 26 May 2023
+    </footer>
+</body>
+
+</html>

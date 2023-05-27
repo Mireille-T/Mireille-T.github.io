@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects | micro:bit Extensions</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;900&family=Roboto+Mono" rel="stylesheet">
+    <link rel="stylesheet" href="project-page.css">
+    <script src="https://kit.fontawesome.com/31e472c4f4.js" crossorigin="anonymous"></script>
+    <script src="project-page.js"></script>
+</head>
+
+<body>
+    <a id="back-btn" href="../projects.html">
+        <i class="fa-solid fa-arrow-left"></i>
+        <p>Back to Projects</p>
+    </a>
+    <section>
+        <img class="cover-image" src="../media/microbit-ext-cover.jpg"
+            alt="micro:bit MakeCode editor with blocks from the Rotary Encoder, Rangefinder and SHT2x sensor extensions">
+        <h1 class="outline-text">micro:bit Extensions</h1>
+        <div class="project-skills">
+            <span>Inkscape</span>
+            <span>TypeScript</span>
+        </div>
+        <p>During my internship at Tinkertanker Pte. Ltd., one of my tasks included the upgrading of the company's
+            current published extensions for the BBC micro:bit for compatibility with the micro:bit v2. These extensions
+            allow users of the MakeCode block editor to program the micro:bit for solutions involving specific sensors
+            and actuators, that would otherwise require higher-level understanding of specific pins.</p>
+        <p>The particular extensions that I worked on are:</p>
+        <img src="../media/microbit-exts.jpg" alt="Icons for micro:bit extensions">
+        <ol>
+            <li><a href="https://github.com/tinkertanker/microDriver_SHT2x" target="_blank">microDriver_SHT2x</a> - for
+                linking up with the SHT20, SHT21, SHT25 temperature and humidity sensors. Coded in <span
+                    class="project-skill">TypeScript</span> and icon created in <span
+                    class="project-skill">Inkscape</span>.</li><br>
+            <li><a href="https://github.com/tinkertanker/pxt-rotary-encoder-ky040" target="_blank">rotary-encoder-ky040</a> - for
+                linking up with the KY-040 rotary encoder. Coded in <span class="project-skill">TypeScript</span>.</li><br>
+            <li><a href="https://github.com/tinkertanker/pxt-range-vl53l0x" target="_blank">range-vl53l0x</a> - for
+                linking up with the VL53L0X time-of-flight range sensor. Coded in <span
+                    class="project-skill">TypeScript</span> and icon created in <span
+                    class="project-skill">Inkscape</span>.</li><br>
+            <li><a href="https://github.com/tinkertanker/pxt-alphanumeric-ht16k33" target="_blank">alphanumeric-ht16k33</a> - for
+                linking up with the HT16K33 alphanumeric display. Coded in <span class="project-skill">TypeScript</span>.</li>
+        </ol>
+    </section>
+    <div id="misc-buttons">
+        <button type="button" class="pri-btn" id="to-top-btn" aria-label="scroll-to-top"><i
+                class="fa-solid fa-arrow-up"></i></button>
+        <button type="button" class="sec-btn" id="dark-mode-btn" aria-label="toggle-light-and-dark-mode"><i
+                id="dark-mode-icon" class="fa-solid fa-moon"></i>
+            <span class="tooltip"><span id="light-dark-text">Dark</span> Mode</span>
+        </button>
+    </div>
+    <footer>
+        Developed with 💚 by Mireille Tan<br>Last update: 27 May 2023
+    </footer>
+</body>
+
+</html>

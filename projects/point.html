@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects | POINT VR</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;900&family=Roboto+Mono" rel="stylesheet">
+    <link rel="stylesheet" href="project-page.css">
+    <script src="https://kit.fontawesome.com/31e472c4f4.js" crossorigin="anonymous"></script>
+    <script src="project-page.js"></script>
+</head>
+
+<body>
+    <a id="back-btn" href="../projects.html">
+        <i class="fa-solid fa-arrow-left"></i>
+        <p>Back to Projects</p>
+    </a>
+    <section>
+        <img class="cover-image" src="../media/point-vr-cover.jpg"
+            alt="A VR simulation consisting of a grid deforming around two spheres">
+        <h1 class="outline-text">POINT VR</h1>
+        <div class="project-links">
+            <a href="https://icasu.illinois.edu/outreach/point-vr" target="_blank" aria-label="website"><i
+                    class="fa-solid fa-globe"></i></a>
+            <a href="https://github.com/POINT-VR/POINT-VR-Chapter-1" target="_blank" aria-label="GitHub"><i
+                    class="fa-brands fa-github"></i></a>
+        </div>
+        <div class="project-skills">
+            <span>C#</span>
+            <span>Figma</span>
+            <span>GitHub</span>
+            <span>Inkscape</span>
+            <span>Unity</span>
+        </div>
+        <p>Physics Outreach and Instruction through New Technologies (POINT) is an Illinois Center for Advanced Studies
+            of the Universe (ICASU) project aimed at generating interest in physics for middle school and high school
+            students through virtual reality.</p>
+        <p>Since Fall 2022, I have been a member of the VR Production Team,
+            which aims to develop further simulations to explain the fundamental physics of gravity and general
+            relativity, using Unity.</p>
+        <p>Using <span class="project-skill">C#</span> scripting in <span class="project-skill">Unity</span>, I developed several features for the simulation, most
+            notably 1. a subtitling system that takes in a .srt file as an input and parses tags to generate captions in
+            the appropriate language, 2. a UI manager for the handling of menu interactions, and 3. a tutorial for new users (via coroutines).</p>
+        <img src="../media/point-vr-figma.jpg" alt="UI design for menus in Figma interface">
+        <p>With <span class="project-skill">Figma</span>, I designed the current UI for the tutorial and menu, for
+            clarity and easy interactability in VR. Subsequently, I implemented these designs in <span
+                class="project-skill">Unity</span>.</p>
+        <img src="../media/point-vr-inkscape.jpg" alt="controls graphic in Inkscape interface">
+        <p>I also contributed through the creation of several 2D assets in <span class="project-skill">Inkscape</span>,
+            namely the controls graphic and a clock for demonstration of how matter affects spacetime. Vector graphics
+            were used to ensure high resolution and ease of editing for future uses.</p>
+    </section>
+    <div id="misc-buttons">
+        <button type="button" class="pri-btn" id="to-top-btn" aria-label="scroll-to-top"><i
+                class="fa-solid fa-arrow-up"></i></button>
+        <button type="button" class="sec-btn" id="dark-mode-btn" aria-label="toggle-light-and-dark-mode"><i
+                id="dark-mode-icon" class="fa-solid fa-moon"></i>
+            <span class="tooltip"><span id="light-dark-text">Dark</span> Mode</span>
+        </button>
+    </div>
+    <footer>
+        Developed with 💚 by Mireille Tan<br>Last update: 26 May 2023
+    </footer>
+</body>
+
+</html>

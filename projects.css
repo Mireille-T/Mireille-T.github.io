@@ -2,6 +2,7 @@
     --col-pri: #156374;
     --col-highlight: #abe1ed;
     --col-text: #121212;
+    --col-text-translucent: #12121244;
     --col-bg: #FFFFFF;
     --col-bg-translucent: #FFFFFF99;
     --col-transparent: #00000000;
@@ -12,6 +13,7 @@
     --col-pri: #abe1ed;
     --col-highlight: #156374;
     --col-text: #FFFFFF;
+    --col-text-translucent: #FFFFFF44;
     --col-bg: #1f1f1f;
     --col-bg-translucent: #1f1f1f99;
 }
@@ -65,10 +67,11 @@ header a:hover {
 
 section {
     display: flex;
+    gap: 2rem;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    min-height: 100%;
+    min-height: max-content;
 }
 
 h1 {
@@ -116,22 +119,70 @@ footer {
     background-color: var(--col-highlight);
 }
 
-.more-info {
-    color: var(--col-text);
-    text-decoration: none;
-    border-bottom: 1.6px dotted var(--col-text);
-    display: inline;
-    font-size: 1.2rem;
-    transition-duration: calc(var(--ani-time) * 0.5);
-}
-
-.more-info:hover {
-    transform: translateX(12px);
-    transition-duration: calc(var(--ani-time) * 0.5);
-}
-
 .col-pri {
     color: var(--col-pri);
+}
+
+.project-card {
+    width: 10rem;
+    height: 14rem;
+    border: solid 1.8px var(--col-pri);
+    border-radius: 5px;
+    background-color: var(--col-bg);
+    display: flex;
+    background-repeat: no-repeat;
+    background-size: auto 14rem;
+    background-position: 50% 50%;
+    transition: background-size calc(var(--ani-time) * 2) ease-out;
+    transition-duration: var(--ani-time);
+    color: var(--col-text);
+    text-decoration: none;
+}
+
+.card-desc-container {
+    width: calc(100% - 3rem);
+    height: calc(100% - 3rem);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1.5rem;
+    transition: all var(--ani-time);
+    background-color: var(--col-text-translucent);
+}
+
+.card-title {
+    background-color: var(--col-bg);
+    border-radius: 100%;
+    width: 7rem;
+    height: 7rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    transform: scaleX(1) scaleY(1);
+    transition: all var(--ani-time);
+}
+
+.card-title h3 {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    transition-duration: var(--ani-time);
+}
+
+.card-title hr {
+    margin: 0;
+    padding: 0;
+    width: 5rem;
+    transition-duration: var(--ani-time);
+}
+
+.card-title p {
+    font-size: 1rem;
+    max-width: 5rem;
+    text-align: center;
+    transition-duration: var(--ani-time);
 }
 
 .pri-btn {
@@ -188,6 +239,119 @@ footer {
 
 #mobile-nav-btn {
     display: none;
+}
+
+#projects {
+    padding-top: 6rem;
+}
+
+#projects p {
+    max-width: 80%;
+}
+
+#filter {
+    display: flex;
+    width: 80%;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+#filter button {
+    border: none;
+    font-size: 1.6rem;
+    font-weight: 400;
+    background-color: var(--col-transparent);
+    color: var(--col-text);
+    font-family: 'Lato', Helvetica, sans-serif;
+    padding-bottom: 3px;
+    cursor: pointer;
+    display: inline-block;
+    background-image: linear-gradient(var(--col-pri) 0 0);
+    background-position: 0 100%;
+    background-size: 0% 3px;
+    background-repeat: no-repeat;
+    transition:
+        background-size var(--ani-time),
+        background-position 0s var(--ani-time);
+}
+
+#filter button.current-filter {
+    background-position: 100% 100%;
+    background-size: 100% 3px;
+}
+
+#filter button:hover {
+    background-position: 100% 100%;
+    background-size: 100% 3px;
+}
+
+#project-gallery {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 80%;
+    gap: 1rem;
+    justify-content: center;
+}
+
+#project-point {
+    background-image: url("media/POINT-VR.jpg");
+}
+
+#project-alto {
+    background-image: url("media/alto-square.jpg");
+}
+
+#project-cmn-table {
+    background-image: url("media/cmn.jpg");
+}
+
+#project-native-plants {
+    background-image: url("media/native-plants-cover.jpg");
+}
+
+#project-yoshinodana {
+    background-image: url("media/yoshinodana.jpg");
+}
+
+#project-elly {
+    background-image: url("media/elly-square.png");
+}
+
+#project-timezone {
+    background-image: url("media/to-time-zone.jpg");
+}
+
+#project-microbit-ext {
+    background-image: url("media/microbit-ext-sht2x.png");
+}
+
+#project-coffee {
+    background-image: url("media/coffee.jpg");
+}
+
+#project-teahouse {
+    background-image: url("media/teahouse.jpg");
+}
+
+#project-camera {
+    background-image: url("media/sony-a7c.jpg");
+}
+
+#project-wagashi {
+    background-image: url("media/dango.jpg");
+}
+
+#project-ice-skates {
+    background-image: url("media/ice-skates.jpg");
+}
+
+#project-explorer {
+    background-image: url("media/explorer.jpg");
+}
+
+#project-airplane {
+    background-image: url("media/airplane.jpg");
 }
 
 #misc-buttons {
@@ -348,6 +512,13 @@ footer {
         backdrop-filter: blur(10px);
     }
 
+    section,
+    footer {
+        background-color: var(--col-bg-translucent);
+        -webkit-backdrop-filter: blur(5px);
+        backdrop-filter: blur(5px);
+    }
+
     .sec-btn {
         background-color: var(--col-bg-translucent);
         -webkit-backdrop-filter: blur(10px);
@@ -362,6 +533,23 @@ footer {
 }
 
 @media (hover: hover) {
+    .project-card:hover .card-desc-container {
+        background-color: var(--col-transparent);
+    }
+
+    .project-card:hover {
+        background-size: auto 15rem;
+        cursor: pointer;
+    }
+
+    .project-card:hover .flipx .card-title {
+        transform: scaleX(0);
+    }
+
+    .project-card:hover .flipy .card-title {
+        transform: scaleY(0);
+    }
+
     .pri-btn:hover {
         cursor: pointer;
     }
