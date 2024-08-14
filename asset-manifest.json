@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.fe38cc61.css",
-    "main.js": "/static/js/main.e30469c6.js",
+    "main.css": "/static/css/main.ea235268.css",
+    "main.js": "/static/js/main.294364e9.js",
     "static/js/453.9c2a8778.chunk.js": "/static/js/453.9c2a8778.chunk.js",
     "static/media/ewb-web-cover.png": "/static/media/ewb-web-cover.caa57d455072a45d8277.png",
     "static/media/wvm-hero.png": "/static/media/wvm-hero.8875ed3f224b519ef886.png",
@@ -64,12 +64,12 @@
     "static/media/fa-v4compatibility.ttf": "/static/media/fa-v4compatibility.0f6cb412603527bda691.ttf",
     "static/media/fa-v4compatibility.woff2": "/static/media/fa-v4compatibility.6cfec8414be20e2c3426.woff2",
     "index.html": "/index.html",
-    "main.fe38cc61.css.map": "/static/css/main.fe38cc61.css.map",
-    "main.e30469c6.js.map": "/static/js/main.e30469c6.js.map",
+    "main.ea235268.css.map": "/static/css/main.ea235268.css.map",
+    "main.294364e9.js.map": "/static/js/main.294364e9.js.map",
     "453.9c2a8778.chunk.js.map": "/static/js/453.9c2a8778.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.fe38cc61.css",
-    "static/js/main.e30469c6.js"
+    "static/css/main.ea235268.css",
+    "static/js/main.294364e9.js"
   ]
 }
