@@ -1,0 +1,139 @@
+#projects {
+    gap: 2rem;
+    min-height: max-content;
+    height: auto;
+    padding-top: 6rem;
+}
+
+#projects p {
+    max-width: 80%;
+}
+
+#filter {
+    display: flex;
+    width: 80%;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+#filter button {
+    border: none;
+    font-size: 1.6rem;
+    font-weight: 400;
+    background-color: var(--col-transparent);
+    color: var(--col-text);
+    font-family: 'Lato', Helvetica, sans-serif;
+    padding-bottom: 3px;
+    cursor: pointer;
+    display: inline-block;
+    background-image: linear-gradient(var(--col-pri) 0 0);
+    background-position: 0 100%;
+    background-size: 0% 3px;
+    background-repeat: no-repeat;
+    transition:
+        background-size var(--ani-time),
+        background-position 0s var(--ani-time);
+}
+
+#filter button.current-filter {
+    background-position: 100% 100%;
+    background-size: 100% 3px;
+}
+
+#filter button:hover {
+    background-position: 100% 100%;
+    background-size: 100% 3px;
+}
+
+#project-gallery {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 80%;
+    gap: 1rem;
+    justify-content: center;
+}
+
+
+.project-card {
+    width: 10rem;
+    height: 14rem;
+    border: solid 1.8px var(--col-pri);
+    border-radius: 5px;
+    background-color: var(--col-bg);
+    display: flex;
+    background-repeat: no-repeat;
+    background-size: auto 14rem;
+    background-position: 50% 50%;
+    transition: background-size calc(var(--ani-time) * 2) ease-out;
+    transition-duration: var(--ani-time);
+    color: var(--col-text);
+    text-decoration: none;
+}
+
+.card-desc-container {
+    width: calc(100% - 3rem);
+    height: calc(100% - 3rem);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1.5rem;
+    transition: all var(--ani-time);
+    background-color: var(--col-text-translucent);
+}
+
+.card-title {
+    background-color: var(--col-bg);
+    border-radius: 100%;
+    width: 7.2rem;
+    height: 7.2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    transform: scaleX(1) scaleY(1);
+    transition: all var(--ani-time);
+}
+
+.card-title h3 {
+    width: 90%;
+    font-size: 1.1rem;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    transition-duration: 0.0;
+}
+
+.card-title hr {
+    margin: 0;
+    padding: 0;
+    width: 5rem;
+    transition-duration: 0.0;
+}
+
+.card-title p {
+    font-size: 1rem;
+    max-width: 5rem;
+    text-align: center;
+    transition-duration: 0.0;
+}
+
+@media (hover: hover) {
+    .project-card:hover .card-desc-container {
+        background-color: var(--col-transparent);
+    }
+
+    .project-card:hover {
+        background-size: auto 15rem;
+        cursor: pointer;
+    }
+
+    .project-card:hover .flipx .card-title {
+        transform: scaleX(0);
+    }
+
+    .project-card:hover .flipy .card-title {
+        transform: scaleY(0);
+    }
+}
