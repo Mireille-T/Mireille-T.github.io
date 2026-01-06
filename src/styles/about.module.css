@@ -1,0 +1,131 @@
+#about {
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    justify-content: center;
+    align-items: center;
+    row-gap: 2rem;
+    padding: 2rem;
+    transition-duration: var(--ani-time);
+}
+
+#about div {
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+}
+
+#about a {
+    color: var(--col-text);
+    text-decoration: none;
+    border-bottom: 1.6px dotted var(--col-text);
+}
+
+#journey {
+    height: auto;
+}
+
+.timeline {
+    position: relative;
+    width: 80%;
+    margin: 0 auto;
+    padding-top: 2rem;
+}
+
+.timeline::after {
+    content: '';
+    position: absolute;
+    width: 6px;
+    background-color: var(--col-text);
+    top: 2rem;
+    bottom: 0;
+    left: 50%;
+    margin-left: -3px;
+}
+
+.timeline-container {
+    padding: 3rem 0 1rem 0;
+    position: relative;
+    background-color: inherit;
+    width: 50%;
+}
+
+.timeline-img {
+    content: '';
+    position: absolute;
+    width: 3.6rem;
+    height: 3.6rem;
+    right: -2.04rem;
+    background-color: white;
+    background-repeat: no-repeat;
+    background-size: 3.6rem 3.6rem;
+    border: 3.6px solid var(--col-pri);
+    top: 15px;
+    border-radius: 50%;
+    z-index: 1;
+}
+
+.timeline-left {
+    left: 0;
+}
+
+.timeline-right {
+    left: 50%;
+}
+
+.timeline-right .timeline-img {
+    left: -2.06rem;
+}
+
+.timeline-content {
+    padding: 2rem;
+    background-color: var(--col-bg);
+    position: relative;
+    border-radius: 5px;
+    border: 1.8px solid var(--col-pri);
+}
+
+.timeline-content-subtitle {
+    font-size: 1rem;
+    color: var(--col-pri);
+    font-family: 'Roboto Mono', monospace;
+    margin: 5px 0 8px 0;
+}
+
+.timeline-content ul {
+    margin: 0;
+    padding-left: 17px;
+}
+
+@media screen and (max-width: 640px) {
+    #about {
+        width: 80%
+    }
+
+    .timeline::after {
+        left: 1rem;
+    }
+
+    .timeline-container {
+        width: 96%;
+        padding-left: 1rem;
+        padding-right: 0;
+    }
+
+    .timeline-left::after,
+    .timeline-right::after {
+        left: -1.1rem;
+    }
+
+    .timeline-right {
+        left: 0%;
+    }
+
+    .timeline-left .timeline-img {
+        left: -1.1rem;
+    }
+    
+    .timeline-right .timeline-img {
+        left: -1.1rem;
+    }
+}
