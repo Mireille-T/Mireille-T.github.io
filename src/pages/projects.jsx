@@ -3,6 +3,9 @@ import React from 'react';
 import styles from '../styles/projects.module.css'
 
 import POINT from "../media/POINT-VR.jpg"
+import NatureGuessr from "../media/natureguessr.png"
+import EOH2026 from "../media/eoh2026.png"
+import ArcoVoltaico from "../media/arco-voltaico.png"
 import WVM from "../media/walking-virtual-meeting.png"
 import VeeR from "../media/veer.png"
 import Kingfisher from "../media/kingfisher-web.png"
@@ -39,6 +42,40 @@ export const projectList = [
       "C#",
       "HLSL",
       "GitHub"
+    ]
+  },
+  {
+    id: "natureguessr",
+    title: "Nature Guessr",
+    subtitle: "React, CSS, Figma",
+    img: NatureGuessr,
+    tags: [
+      "React",
+      "HTML",
+      "CSS",
+      "TypeScript",
+      "Figma",
+      "GitHub"
+    ]
+  },
+  {
+    id: "eoh-2026",
+    title: "EOH 2026 Logo",
+    subtitle: "Inkscape",
+    img: EOH2026,
+    tags: [
+      "Inkscape"
+    ]
+  },
+  {
+    id: "arco-voltaico",
+    title: "Arco Voltaico",
+    subtitle: "Unity C#",
+    img: ArcoVoltaico,
+    tags: [
+      "C#",
+      "HLSL",
+      "Unity"
     ]
   },
   {
@@ -242,8 +279,8 @@ const projectCards = projectList.map((project, index) =>
   <ProjectCard key={index} project={project} index={index} />
 );
 
-const codeFilter = ["HTML", "CSS", "TypeScript", "Azure", "Unity", "C#", "GitHub", "WordPress"];
-const designFilter = ["Inkscape", "Figma", "WordPress"];
+const codeFilter = ["Azure", "CSS", "C#", "GitHub", "HLSL", "HTML", "JavaScript", "TypeScript", "Unity", "WordPress"];
+const designFilter = ["Figma", "Inkscape", "WordPress"];
 const modelFilter = ["Blender3D", "Fusion360"];
 function filterProjects(evt) {
   document.getElementsByClassName(styles["current-filter"])[0].classList.toggle(styles["current-filter"]);
@@ -285,6 +322,6 @@ const pageContent = (
 
 export function Projects() {
   return (
-    <PageLayout title="Projects" currentPageIdx={2} pageContent={pageContent} lastModifiedDate="13 August 2024" blurBackground={true} />
+    <PageLayout title="Projects" currentPageIdx={2} pageContent={pageContent} lastModifiedDate="06 January 2026" blurBackground={true} />
   );
 }

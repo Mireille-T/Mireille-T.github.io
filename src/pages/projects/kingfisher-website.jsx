@@ -7,8 +7,9 @@ import ProjectPageLayout from "../../collections/projectPageLayout";
 const projectDescription = (
     <>
         <p>
-            The Belted Kingfisher is UIUC's (as of now) unofficial mascot! Having just joined the team, I volunteered to redesign the website
-            from scratch on <span className={styles["project-skill"]}>WordPress</span> (platform chosen due to the team's hosting plan as well as our
+            The Belted Kingfisher is UIUC's (as of now) unofficial mascot! Wanting to support this movement to replace our
+            college's former racist mascot, I volunteered to redesign the website from scratch on
+            <span className={styles["project-skill"]}>WordPress</span> (platform chosen due to the team's hosting plan as well as our
             desire to use WooCommerce for e-Commerce purposes).
         </p>
         <p>
@@ -35,6 +36,6 @@ export default function KingfisherWebsite() {
             ]}
             projectSkills={["CSS", "HTML", "JavaScript", "WordPress"]}
             projectDescription={projectDescription}
-            lastModifiedDate={"14 August 2024"} />
+            lastModifiedDate={"31 December 2025"} />
     );
 }

@@ -22,8 +22,9 @@ const projectDescription = (
                     the appropriate language</li><br />
                 <li>A UI manager for the handling of menu interactions</li><br />
                 <li>A tutorial for new users (via coroutines)</li><br />
+                <li>Animations for hand movements based on player interactions</li><br />
                 <li>A natural throwing mechanic in VR</li><br />
-                <li>(Together with <span className={styles["project-skill"]}>HLSL</span> shader language) An animated visualisation of infinite 3D space</li>
+                <li>(Using <span className={styles["project-skill"]}>HLSL</span> shader language) An animated visualisation of infinite 3D space</li>
             </ol></p>
         <img className={styles["project-img"]} src={PointFigma} alt="UI design for menus in Figma interface" />
         <p>With <span className={styles["project-skill"]}>Figma</span>, I designed the current UI for the tutorial and menu, for
@@ -67,6 +68,6 @@ export default function Point() {
             ]}
             projectSkills={["C#", "Figma", "GitHub", "HLSL", "Inkscape", "Unity"]}
             projectDescription={projectDescription}
-            lastModifiedDate={"14 August 2024"} />
+            lastModifiedDate={"24 September 2025"} />
     );
 }
