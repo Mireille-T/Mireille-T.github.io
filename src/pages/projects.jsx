@@ -3,6 +3,7 @@ import React from 'react';
 import styles from '../styles/projects.module.css'
 
 import POINT from "../media/POINT-VR.jpg"
+import UnRecorrido from "../media/un-recorrido.png"
 import NatureGuessr from "../media/natureguessr.png"
 import EOH2026 from "../media/eoh2026.png"
 import ArcoVoltaico from "../media/arco-voltaico.png"
@@ -42,6 +43,16 @@ export const projectList = [
       "C#",
       "HLSL",
       "GitHub"
+    ]
+  },
+  {
+    id: "un-recorrido-por-las-epocas",
+    title: "Un Recorrido",
+    subtitle: "JavaScript, Inkscape",
+    img: UnRecorrido,
+    tags: [
+      "JavaScript",
+      "Inkscape"
     ]
   },
   {
